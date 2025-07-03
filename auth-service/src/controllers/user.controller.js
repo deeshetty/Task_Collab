@@ -94,7 +94,13 @@ const login = async (req, res) => {
     res.status(200).send({ message: 'Login successful', token: token, userId: userRecord.id, userName: userRecord.username });
 }
 
+const getUserDetails = async (req, res) => {
+    console.log('Get user details endpoint hit');
+    res.status(200).send({ user: req.user });
+}
+
 export {
     registerUser,
-    login
+    login,
+    getUserDetails
 };

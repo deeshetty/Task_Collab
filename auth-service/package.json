@@ -10,5 +10,10 @@
   "keywords": [],
   "author": "Deepthi Shetty",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.0.2",
+    "jsonwebtoken": "^9.0.2"
+  }
 }
